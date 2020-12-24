@@ -36,10 +36,21 @@
             <input type="button" value="ment" class="chat-btn3">
         <button onclick="dp_menu()" id="btn3"> : </button>
         <div style="display: none;" id="drop-content">
-            <a hreaf='#'>차단</a>
-            <a hreaf='#'>신고</a>
+            <a hreaf='#'>참가자</a>
+            <a hreaf='#'>새창열기</a>
+            <a hreaf='#'>의견보내기</a>
+            <a hreaf='#'>?</a>
         </div>
-       </div>
+      </div> <!-- chat-btn-box--> 
+      <table id="chat-table">
+          <tr>
+            <td id="chat-table1"></td>
+            <td id="chat-table2">name</td>  
+            <td id="chat-table3">text</td>
+            <td id="chat-table4"> : </td>
+          </tr>
+      </table>
+      </div> <!-- sidebar -->
     </div>
     <section>
     <div id="send">
@@ -51,9 +62,9 @@
         <button id="btn5">0/200</button>
         <button id="btn6">숨기기</button>
     </div>
-        <div class="chat-display"></div>라이브쳇
-        <div class="list-display"></div>목록
-        <div class="ment-display"></div>리플    
+        <div class="chat-display"></div>
+        <div class="list-display"></div>
+        <div class="ment-display"></div>   
     </section>
     <script src="/chat.js"></script>  
 </body>
