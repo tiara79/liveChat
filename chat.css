@@ -1,0 +1,133 @@
+
+/* 201223 전은주 쳇팅폼 */
+div{
+  background-color: black;  
+}
+#container{
+  width: 100%;
+}
+#header{
+  padding: 30px;
+  height: 15px;
+}
+#content{
+  width: 72%;
+  float : left;
+  background-color: rgb(45, 48, 50);
+  height: 1000px;
+}
+#sidebar {
+  float: right;
+  width: 28%;
+  background-color:white;
+  height: 880px;
+}
+#send,#footer{ 
+  float: right;
+  width: 28%;
+  height: 60px;
+  margin-bottom:1px;
+  background-color: rgb(45, 48, 50);
+  color: white;
+}
+#sidebar{
+    position: relative;
+    display: inline-block;
+}
+#imgchat{
+    margin:3px;
+    width:60px;
+    height:50px;
+}
+
+#btn4,
+#btn5{
+    margin:3px;
+    width:60px;
+    height: 50px;
+}
+
+#btn6,
+#btn7{
+    margin:3px;
+    float: right;
+    width:60px;
+    height: 50px;
+}
+
+/* 201223 전은주 btn3는 쳇팅창 위에 차단,신고 드랍박스 기능 */
+#btn3{   
+padding: 10px 30px;
+font-size: 10px;
+height: 50px;
+background-color: black;
+color: white;
+float: right;
+outline: none;
+}
+#drop-content{
+position: absolute;
+z-index: 1;
+top: 50px;
+margin-left: 550px;
+background-color: gray;
+}
+#drop-content a{
+display:block;
+font-size: 15px;
+background-color: gray;
+color: white;
+text-decoration: none;
+padding: 5px 45px 30px ;
+}
+
+/* 홍석주 */
+#chat-btn-box{
+    border: 0;
+    outline: none;
+}
+#chat-btn-box{
+    height: 50px;
+}
+#chat-btn-box>input{
+    width: 120px;
+    height: 40px;
+    margin-left: 0px;
+    outline: none;
+    background-color: black;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+/* 채팅 댓글 리스트 버튼눌러서 불러오기(js사용) */
+.chat-display.off{
+    display: none;
+    outline: none;
+    border-top: 0;
+} 
+.ment-display{
+    display: none;
+}
+.list-display{
+    display: none;
+}
+.chat-display.on {
+    display: block;
+    outline: none;
+    border-top: 0;
+}
+.ment-display.on {
+    display: block;
+    outline: none;
+    border-top: 0;
+}
+.list-display.on {
+    display: block;
+    outline: none;
+    border-top: 0;
+}
+.ment-display-input{
+    /* height: 40px;
+    background-color: rgb(199, 196, 196);
+    width: 400px; */
+}

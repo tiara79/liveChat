@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="chat.css">
+    <!--201223 전은주 dp_menu는 쳇팅창 위에 차단,신고 드랍박스 기능  -->
+    <script>
+        function dp_menu() {
+            let click = document.getElementById("drop-content");
+            if (click.style.display === "none") {
+                click.style.display = "block";
+
+            } else {
+                click.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+        </div>
+        <!-- 20201223 전은주 live 화면 -->
+        <div id="content">
+            <h2>Content</h2>
+        </div>
+    </div>
+    <!-- 20201223  전은주 live 쳇 화면 -->
+    <div id="sidebar">
+        <div id="chat-btn-box">
+            <input type="button" value="list" class="chat-btn1">
+            <input type="button" value="chat" class="chat-btn2">
+            <input type="button" value="ment" class="chat-btn3">
+        <button onclick="dp_menu()" id="btn3"> : </button>
+        <div style="display: none;" id="drop-content">
+            <a hreaf='#'>차단</a>
+            <a hreaf='#'>신고</a>
+        </div>
+       </div>
+    </div>
+    <section>
+    <div id="send">
+        <button id="imgchat">이미지</button>
+        <button id="btn7">></button>
+    </div>
+    <div id="footer">
+        <button id="btn4">$</button>
+        <button id="btn5">0/200</button>
+        <button id="btn6">숨기기</button>
+    </div>
+        <div class="chat-display"></div>라이브쳇
+        <div class="list-display"></div>목록
+        <div class="ment-display"></div>리플    
+    </section>
+    <script src="/chat.js"></script>  
+</body>
+</html>
